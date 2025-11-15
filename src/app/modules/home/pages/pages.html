@@ -1,0 +1,483 @@
+<section class="home min-h-screen bg-gray-50">
+
+    <!-- NAVBAR -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="flex items-center justify-between h-12">
+
+                <!-- Brand -->
+                <div class="flex items-center gap-1">
+                    <h1 class="text-sm font-semibold text-gray-900">Techmaleon</h1>
+                    <span class="text-gray-400 text-sm mx-1.5">/</span>
+                    <span class="text-xs text-gray-500">Vigilantes del Caribe</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center gap-6">
+                    <a href="#" class="text-xs font-medium text-gray-900 transition">Monitoreo</a>
+                    <a href="#" class="text-xs font-medium text-gray-600 hover:text-gray-900 transition">Histórico</a>
+                    <a href="#" class="text-xs font-medium text-gray-600 hover:text-gray-900 transition">Reportes</a>
+                    <a href="#" class="text-xs font-medium text-gray-600 hover:text-gray-900 transition">Alertas</a>
+                    <a href="#" class="text-xs font-medium text-gray-600 hover:text-gray-900 transition">Estadísticas</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="#" class="text-xs font-medium text-gray-400 hover:text-gray-600 transition">Salir</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container mx-auto max-w-7xl px-6 lg:px-8 py-6">
+
+        <!-- Page Header -->
+        <div class="mb-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-1">Monitoreo de Sargazo</h2>
+                    <p class="text-sm text-gray-600 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span>
+                        Sistema activo · Actualizado hace 5 minutos
+                    </p>
+                </div>
+                
+                <!-- Acciones rápidas -->
+                <div class="flex items-center gap-2">
+                    <button class="px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded hover:bg-gray-50 transition flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Exportar Datos
+                    </button>
+                    <button class="px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded hover:bg-gray-50 transition flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                        </svg>
+                        Compartir
+                    </button>
+                    <button class="px-3 py-1.5 text-xs font-medium text-white bg-teal-500 rounded hover:bg-teal-600 transition flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stro ke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Generar Reporte
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Métricas principales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <!-- Métrica 1: Zonas de Alto Riesgo -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="w-10 h-10 bg-red-100 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 bg-red-100 text-red-700 rounded-full font-medium">Alerta</span>
+                </div>
+                <p class="text-[11px] text-gray-500 uppercase tracking-wide mb-1">Costas en Zona de Riesgo</p>
+                <p class="text-2xl font-semibold text-gray-900 mb-1">{{ highRiskZones }} costas</p>
+                <p class="text-[10px] text-red-600 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    </svg>
+                    Radio de 100 km
+                </p>
+            </div>
+
+            <!-- Métrica 2: Localidades Monitoreadas -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full font-medium">Activo</span>
+                </div>
+                <p class="text-[11px] text-gray-500 uppercase tracking-wide mb-1">Localidades Monitoreadas</p>
+                <p class="text-2xl font-semibold text-gray-900 mb-1">{{ totalAffectedCoasts }} zonas</p>
+                <p class="text-[10px] text-gray-600">Península de Yucatán</p>
+            </div>
+
+            <!-- Métrica 3: Cobertura Detectada -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="w-10 h-10 bg-teal-100 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                        </svg>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 bg-teal-100 text-teal-700 rounded-full font-medium">Predicción</span>
+                </div>
+                <p class="text-[11px] text-gray-500 uppercase tracking-wide mb-1">Biomasa Total Detectada</p>
+                <p class="text-2xl font-semibold text-gray-900 mb-1">{{ totalBiomassKm2.toFixed(2) }} km²</p>
+                <p class="text-[10px] text-teal-600 flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                    Datos de predicción ML
+                </p>
+            </div>
+
+          
+        </div>
+
+
+        <!-- GRID LAYOUT -->
+        <div class="grid gap-4 transition-all duration-300" [ngClass]="sidebarVisible ? 'grid-cols-1 lg:grid-cols-12' : 'grid-cols-1'">
+
+            <!-- MAPA -->
+            <div class="transition-all duration-300" [ngClass]="sidebarVisible ? 'lg:col-span-9' : 'lg:col-span-12'">
+                <div class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm relative">
+
+                    <!-- Header del mapa -->
+                    <div class="border-b border-gray-200 px-5 py-3 bg-white flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-xs font-semibold text-gray-900 uppercase tracking-wide">Vista del Mapa</h3>
+                            
+                            <!-- Botón toggle sidebar -->
+                            <button
+                                (click)="toggleSidebar()"
+                                class="p-1.5 hover:bg-gray-100 rounded transition"
+                                [title]="sidebarVisible ? 'Ocultar panel' : 'Mostrar panel'">
+                                <svg *ngIf="!sidebarVisible" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                                </svg>
+                                <svg *ngIf="sidebarVisible" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <span class="text-[11px] text-gray-500 font-medium">{{ currentStep + 1 }} / {{ totalSteps }}</span>
+
+                            <div class="flex items-center gap-1.5">
+                                <button
+                                    (click)="previousStep()"
+                                    [disabled]="currentStep === 0 || isLoading"
+                                    class="p-1.5 hover:bg-gray-100 rounded disabled:opacity-30 disabled:cursor-not-allowed transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                    </svg>
+                                </button>
+
+                                <button
+                                    (click)="toggleAnimation()"
+                                    [disabled]="isLoading"
+                                    class="px-3 py-1.5 bg-teal-500 text-white font-medium rounded hover:bg-teal-600 transition text-[11px] disabled:opacity-50 disabled:cursor-not-allowed">
+                                    {{ isAnimating ? 'Pausar' : 'Reproducir' }}
+                                </button>
+
+                                <button
+                                    (click)="nextStep()"
+                                    [disabled]="currentStep === totalSteps - 1 || isLoading"
+                                    class="p-1.5 hover:bg-gray-100 rounded disabled:opacity-30 disabled:cursor-not-allowed transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Loader overlay -->
+                    <div *ngIf="isLoading" class="w-full h-[600px] bg-white flex items-center justify-center">
+                        <div class="text-center">
+                            <!-- Spinner -->
+                            <div class="inline-block h-16 w-16 animate-spin rounded-full border-4 border-solid border-teal-500 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite] mb-4">
+                            </div>
+                            <p class="text-base font-semibold text-gray-900 mb-2">{{ loadingMessage }}</p>
+                            <p class="text-sm text-gray-600">Esto puede tomar hasta 30 segundos...</p>
+                            <div class="mt-4 flex items-center justify-center gap-2">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse"></div>
+                                <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa (solo visible cuando NO está cargando) -->
+                    <div *ngIf="!isLoading" id="map" class="w-full h-[600px] bg-gray-100"></div>
+                </div>
+            </div>
+
+
+            <!-- SIDEBAR -->
+            <div *ngIf="sidebarVisible" class="lg:col-span-3 space-y-4 transition-all duration-300">
+
+                <!-- Selector de Localidad -->
+                <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                    <label class="block text-xs font-semibold text-gray-900 mb-2 uppercase tracking-wide">Localidad</label>
+                    <select 
+                        [(ngModel)]="selectedCoast"
+                        (change)="onCoastChange($event)"
+                        class="w-full px-3 py-2 border border-gray-300 rounded text-xs focus:ring-1 focus:ring-teal-500 focus:border-teal-500 focus:outline-none bg-white text-gray-900">
+                        <option value="">Todas las costas</option>
+                        <optgroup label="Yucatán">
+                            <option value="progreso">Progreso</option>
+                            <option value="telchac">Telchac Puerto</option>
+                            <option value="dzilam">Dzilam de Bravo</option>
+                            <option value="san-felipe">San Felipe</option>
+                            <option value="rio-lagartos">Río Lagartos</option>
+                        </optgroup>
+                        <optgroup label="Quintana Roo">
+                            <option value="cancun">Cancún</option>
+                            <option value="puerto-morelos">Puerto Morelos</option>
+                            <option value="playa-del-carmen">Playa del Carmen</option>
+                            <option value="tulum">Tulum</option>
+                            <option value="akumal">Akumal</option>
+                            <option value="mahahual">Mahahual</option>
+                            <option value="xcalak">Xcalak</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!-- Selector de Fecha -->
+                <div class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                    <label class="block text-xs font-semibold text-gray-900 mb-2 uppercase tracking-wide">Rango de Fechas</label>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <label class="block text-[10px] text-gray-600 mb-1">Fecha Inicio</label>
+                            <input 
+                                type="date" 
+                                [(ngModel)]="selectedStartDate"
+                                (change)="onDateChange($event)"
+                                [value]="todayDate"
+                                class="w-full px-3 py-2 border border-gray-300 rounded text-xs focus:ring-1 focus:ring-teal-500 focus:border-teal-500 focus:outline-none bg-white text-gray-900" />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[10px] text-gray-600 mb-1">Fecha Final</label>
+                            <input 
+                                type="date" 
+                                [(ngModel)]="selectedEndDate"
+                                (change)="onDateChange($event)"
+                                [value]="todayDate"
+                                class="w-full px-3 py-2 border border-gray-300 rounded text-xs focus:ring-1 focus:ring-teal-500 focus:border-teal-500 focus:outline-none bg-white text-gray-900" />
+                        </div>
+                    </div>
+                    
+                    <p class="text-[11px] text-gray-500 mt-3">
+                        <span class="font-medium">Periodo:</span> {{ selectedStartDate || todayDate }} - {{ selectedEndDate || todayDate }}
+                    </p>
+                </div>
+
+                <!-- Estadísticas (solo visible cuando no hay costa seleccionada) -->
+                <div *ngIf="!selectedCoast" class="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 class="text-xs font-semibold text-gray-900 uppercase tracking-wide">Estadísticas</h4>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[11px] text-gray-600">Costas monitoreadas</span>
+                            <span class="text-xs font-semibold text-gray-900">12</span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <span class="text-[11px] text-gray-600">Última actualización</span>
+                            <span class="text-[11px] font-medium text-gray-900">Hace 5 min</span>
+                        </div>
+
+                        <div class="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-teal-500" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerta -->
+                <div class="bg-amber-50 rounded-lg border border-amber-200 p-4 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 bg-amber-500 rounded flex items-center justify-center text-white shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-semibold text-amber-900 mb-0.5">Alerta Activa</h4>
+                            <p class="text-[11px] text-amber-800 leading-relaxed">Concentración elevada detectada en zona norte</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN ADICIONAL DEBAJO DEL MAPA -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+            
+            <!-- Card 1: Zonas Afectadas -->
+            <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-red-100 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900">Costas Más Cercanas</h3>
+                </div>
+
+                <div class="space-y-3">
+                    <div *ngFor="let zone of topAffectedZones" class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                        <div>
+                            <p class="text-xs font-medium text-gray-900">{{ zone.name }}</p>
+                            <p class="text-[10px] text-gray-600">{{ zone.biomassKm2 }} km² · Densidad {{ zone.density }}%</p>
+                        </div>
+                        <span 
+                            class="text-[10px] px-2 py-0.5 rounded-full font-medium"
+                            [ngClass]="{
+                                'bg-red-100 text-red-700': zone.riskLevel === 'Alto',
+                                'bg-amber-100 text-amber-700': zone.riskLevel === 'Medio',
+                                'bg-teal-100 text-teal-700': zone.riskLevel === 'Bajo'
+                            }">
+                            {{ zone.riskLevel }}
+                        </span>
+                    </div>
+                    
+                    <!-- Mostrar mensaje si no hay datos -->
+                    <div *ngIf="topAffectedZones.length === 0" class="text-center py-4">
+                        <p class="text-xs text-gray-500">Cargando datos...</p>
+                    </div>
+                </div>
+
+                <button class="w-full mt-4 px-3 py-2 text-xs font-medium text-teal-600 bg-teal-50 rounded hover:bg-teal-100 transition">
+                    Ver todas las {{ totalAffectedCoasts }} zonas
+                </button>
+            </div>
+
+            <!-- Card 2: Tendencia Semanal -->
+            <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900">Tendencia Semanal</h3>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-600">Lunes</span>
+                        <div class="flex items-center gap-2">
+                            <div class="w-24 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-teal-500" style="width: 45%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-900 w-10 text-right">1,200 m²</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-600">Martes</span>
+                        <div class="flex items-center gap-2">
+                            <div class="w-24 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-amber-500" style="width: 62%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-900 w-10 text-right">1,650 m²</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-600">Miércoles</span>
+                        <div class="flex items-center gap-2">
+                            <div class="w-24 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-red-500" style="width: 85%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-900 w-10 text-right">2,280 m²</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-600">Jueves</span>
+                        <div class="flex items-center gap-2">
+                            <div class="w-24 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-red-500" style="width: 92%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-900 w-10 text-right">2,450 m²</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-600">Viernes</span>
+                        <div class="flex items-center gap-2">
+                            <div class="w-24 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-amber-500" style="width: 70%"></div>
+                            </div>
+                            <span class="text-xs font-medium text-gray-900 w-10 text-right">1,890 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-blue-50 rounded">
+                    <p class="text-[11px] text-blue-800">
+                        <span class="font-semibold">Tendencia:</span> Incremento del 18% en los últimos 7 días
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Pronóstico IA -->
+            <div class="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-purple-100 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-semibold text-gray-900">Pronóstico IA</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-gray-600">Próximas 24 horas</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full font-medium">Moderado</span>
+                        </div>
+                        <p class="text-[11px] text-gray-700 leading-relaxed">
+                            Se espera un incremento del 12% en la cobertura total, principalmente en zonas de Cancún y Playa del Carmen.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-gray-600">Próximos 3 días</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-red-100 text-red-700 rounded-full font-medium">Crítico</span>
+                        </div>
+                        <p class="text-[11px] text-gray-700 leading-relaxed">
+                            Posible arribo masivo a costas de Tulum y Akumal. Se recomienda activar protocolos de limpieza.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-gray-600">Próxima semana</span>
+                            <span class="text-[10px] px-2 py-0.5 bg-teal-100 text-teal-700 rounded-full font-medium">Favorable</span>
+                        </div>
+                        <p class="text-[11px] text-gray-700 leading-relaxed">
+                            Condiciones climáticas favorables podrían reducir la concentración en un 25% hacia el fin de semana.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-purple-50 rounded flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-purple-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-[10px] text-purple-800">
+                        Pronóstico generado con IA usando datos históricos, corrientes marinas y condiciones meteorológicas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
